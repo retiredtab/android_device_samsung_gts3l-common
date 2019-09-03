@@ -38,6 +38,9 @@ TARGET_SCREEN_WIDTH := 1536
 # Device characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \

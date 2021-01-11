@@ -437,6 +437,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    com.android.vndk.current \
     vndk-sp
 
 PRODUCT_COPY_FILES += \

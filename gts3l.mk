@@ -256,7 +256,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.gts3l
+    android.hardware.light-service.gts3l
 
 # LiveDisplay
 PRODUCT_PACKAGES += \

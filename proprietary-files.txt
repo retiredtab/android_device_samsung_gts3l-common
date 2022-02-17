@@ -858,8 +858,10 @@ lib/libsnamrwb.so
 # Peripheral Manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+
+# Peripheral manager - from Nokia/Plate2_00WW - QKQ1.190828.002
+vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
+vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Power
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service

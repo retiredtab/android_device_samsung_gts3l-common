@@ -458,6 +458,15 @@ lib64/vendor.display.color@1.1.so
 lib64/vendor.display.color@1.2.so
 lib64/vendor.display.postproc@1.0.so
 
+# Camera (unipugin)
+lib64/libblurdetection_interface.so:vendor/lib64/libblurdetection_interface.so
+lib64/libflashedlls_interface.so:vendor/lib64/libflashedlls_interface.so
+lib64/libsmartfocus_interface.so:vendor/lib64/libsmartfocus_interface.so
+lib/libblurdetection_interface.so:vendor/lib/libblurdetection_interface.so
+lib/libdejagging_interface.so:vendor/lib/libdejagging_interface.so
+lib/libflashedlls_interface.so:vendor/lib/libflashedlls_interface.so
+lib/libsmartfocus_interface.so:vendor/lib/libsmartfocus_interface.so
+
 # Display utils
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc

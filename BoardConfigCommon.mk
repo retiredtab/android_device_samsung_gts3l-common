@@ -149,9 +149,6 @@ TARGET_USES_MKE2FS := true
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
-# Fingerprint
-TARGET_SEC_FP_HAL_VARIANT := bauth
-
 # Init
 TARGET_PLATFORM_DEVICE_BASE := "/devices/soc/"
 

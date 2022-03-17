@@ -439,6 +439,25 @@ vendor/lib/W13QS_libTsAe.so
 vendor/lib/W13QS_libTsAf.so
 vendor/lib/W13QS_libTsAwb.so
 
+# Camera (unipugin)
+lib64/libblurdetection.so:vendor/lib64/libblurdetection.so
+lib64/libblurdetection_interface.so:vendor/lib64/libblurdetection_interface.so
+lib64/libdejagging_core.so:vendor/lib64/libdejagging_core.so
+lib64/libimage_flashed_lls.so:vendor/lib64/libimage_flashed_lls.so
+lib64/libflashedlls_interface.so:vendor/lib64/libflashedlls_interface.so
+lib64/libhighlight_interface.so:vendor/lib64/libhighlight_interface.so
+lib64/libhypermotion_interface.so:vendor/lib64/libhypermotion_interface.so
+lib64/libsmartfocusengine.so:vendor/lib64/libsmartfocusengine.so
+lib64/libsmartfocus_interface.so:vendor/lib64/libsmartfocus_interface.so
+lib/libblurdetection.so:vendor/lib/libblurdetection.so
+lib/libblurdetection_interface.so:vendor/lib/libblurdetection_interface.so
+lib/libdejagging_core.so:vendor/lib/libdejagging_core.so
+lib/libdejagging_interface.so:vendor/lib/libdejagging_interface.so
+lib/libimage_flashed_lls.so:vendor/lib/libimage_flashed_lls.so
+lib/libflashedlls_interface.so:vendor/lib/libflashedlls_interface.so
+lib/libsmartfocusengine.so:vendor/lib/libsmartfocusengine.so
+lib/libsmartfocus_interface.so:vendor/lib/libsmartfocus_interface.so
+
 # Display postprocessing - from miui_DAISYGlobal_V11.0.2.0.QDLMIXM_d59f395371_10.0
 vendor/bin/hw/vendor.display.color@1.0-service|dd461fbbbdc7175b8e1e37eba19bc1c48111b5b6
 vendor/bin/mm-pp-dpps|5d68b2ae07de96e33d1c1b7698994ec2b219e084
@@ -448,15 +467,6 @@ vendor/lib64/vendor.display.color@1.0.so|e90c75046ba1f6f677b9f719caaae8d91d1a5cd
 vendor/lib64/vendor.display.color@1.1.so|0e6a94dafc8ff10e54bae0004fe01e5f24ea3d33
 vendor/lib64/vendor.display.color@1.2.so|53b7d9d754f8909700d4b79c3145a209f638c7fd
 vendor/lib64/vendor.display.postproc@1.0.so|2c389d80a5c5cc87608babf29a056a74d69697e4
-
-# Camera (unipugin)
-lib64/libblurdetection_interface.so:vendor/lib64/libblurdetection_interface.so
-lib64/libflashedlls_interface.so:vendor/lib64/libflashedlls_interface.so
-lib64/libsmartfocus_interface.so:vendor/lib64/libsmartfocus_interface.so
-lib/libblurdetection_interface.so:vendor/lib/libblurdetection_interface.so
-lib/libdejagging_interface.so:vendor/lib/libdejagging_interface.so
-lib/libflashedlls_interface.so:vendor/lib/libflashedlls_interface.so
-lib/libsmartfocus_interface.so:vendor/lib/libsmartfocus_interface.so
 
 # Display utils
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
@@ -529,8 +539,6 @@ lib/vendor.qti.hardware.fm@1.0.so
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib64/hw/gatekeeper.msm8996.so
-vendor/lib/hw/gatekeeper.mdfpp.so
-vendor/lib/hw/gatekeeper.msm8996.so
 
 # GPS
 vendor/bin/hw/vendor.qti.gnss@1.0-service
@@ -725,8 +733,10 @@ lib64/vendor.qti.hardware.iop@2.0.so
 vendor/bin/msm_irqbalance|e70694e0412052cd591389b8c1bf4573e5777257
 
 # Keystore
+vendor/lib64/hw/keystore.mdfpp.so
 vendor/lib64/hw/keystore.msm8996.so
-vendor/lib/hw/keystore.msm8996.so
+vendor/lib64/libkeymaster_helper.so
+vendor/lib64/libkeymaster_mdfpp.so
 
 # Media - from daisy - QKQ1.191002.002
 lib64/libFileMux.so|8d07dde58a8b629ccce4dd9c778e76a6513ca555

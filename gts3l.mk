@@ -22,7 +22,6 @@ $(call inherit-product-if-exists, vendor/samsung/gts3l-common/gts3l-common-vendo
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    device/samsung/qcom-common/overlay \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 

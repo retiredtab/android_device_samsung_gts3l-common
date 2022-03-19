@@ -47,7 +47,7 @@ group: AID_SYSTEM
 caps: 0
 
 [firmware/image/*]
-mode: 0771
+mode: 0775
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
@@ -209,7 +209,7 @@ group: AID_GPS
 caps: NET_BIND_SERVICE WAKE_ALARM BLOCK_SUSPEND
 
 [vendor/firmware_mnt/image/*]
-mode: 0771
+mode: 0775
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0

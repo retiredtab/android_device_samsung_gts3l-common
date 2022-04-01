@@ -25,3 +25,4 @@ genfscon sysfs /devices/soc/6a00000.ssusb/power_supply                          
 genfscon sysfs /devices/soc/soc:i2c@11/i2c-1/1-0071/power_supply                   u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/soc/soc:i2c@13/i2c-0/0-0049/sm5705-charger/power_supply    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/virtual/lcd/panel                                          u:object_r:sysfs_lcd_writable:s0
+genfscon sysfs /devices/virtual/usb_notify/usb_control/disable                     u:object_r:sysfs_usb:s0

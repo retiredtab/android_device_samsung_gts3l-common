@@ -30,8 +30,6 @@ on init
     chmod 0660 /sys/class/android_usb/android0/terminal_version
     chown system radio /sys/class/host_notify/usb_otg/booster
     chmod 0660 /sys/class/host_notify/usb_otg/booster
-    chown system radio /sys/class/usb_notify/usb_control/disable
-    chmod 0660 /sys/class/usb_notify/usb_control/disable
 
 on charger && property:ro.debuggable=1
     mkdir /dev/usb-ffs 0770 shell shell

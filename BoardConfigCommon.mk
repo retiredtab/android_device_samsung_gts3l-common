@@ -63,6 +63,20 @@ TARGET_BOARD_PLATFORM := msm8996
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
+# Audio
+AUDIO_FEATURE_ENABLED_AHAL_EXT := false
+AUDIO_FEATURE_ENABLED_DYNAMIC_ECNS := false
+AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
+AUDIO_FEATURE_ENABLED_FFV := false
+AUDIO_FEATURE_ENABLED_HW_ACCELERATED_EFFECTS := false
+AUDIO_FEATURE_ENABLED_KEEP_ALIVE_ARM_FFV := false
+AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
+BOARD_SUPPORTS_SOUND_TRIGGER := false
+BOARD_USES_ALSA_AUDIO := true
+USE_CUSTOM_AUDIO_POLICY := 1
+USE_XML_AUDIO_POLICY_CONF := 1
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 BOARD_HAS_QCA_BT_ROME := true
@@ -176,7 +190,6 @@ SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib/libbauthserver.so|libbauthtzcommon_shim.so \
     /vendor/lib64/libbauthserver.so|libbauthtzcommon_shim.so \
-    /vendor/lib/hw/audio.primary.msm8996.so|libaudioprimary_shim.so \
     /vendor/lib/hw/camera.msm8996.so|libshims_cameraclient.so
 
 # Wifi

@@ -645,6 +645,26 @@
         <path name="deep-buffer-playback 4-speaker" />
     </path>
 
+    <path name="deep-buffer-playback speaker-and-headphones-bt-sco">
+        <path name="deep-buffer-playback bt-sco" />
+        <path name="deep-buffer-playback speaker-and-headphones" />
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-headphones-bt-sco-wb">
+        <path name="deep-buffer-playback bt-sco-wb" />
+        <path name="deep-buffer-playback speaker-and-headphones" />
+    </path>
+
+    <path name="deep-buffer-playback 4-speaker-and-headphones-bt-sco">
+        <path name="deep-buffer-playback bt-sco" />
+        <path name="deep-buffer-playback 4-speaker-and-headphones" />
+    </path>
+
+    <path name="deep-buffer-playback 4-speaker-and-headphones-bt-sco-wb">
+        <path name="deep-buffer-playback bt-sco-wb" />
+        <path name="deep-buffer-playback 4-speaker-and-headphones" />
+    </path>
+
     <path name="deep-buffer-playback bt-ble">
         <ctl name="AUX PCM SampleRate" value="16000" />
         <ctl name="TERT_AUX_PCM_RX Audio Mixer MultiMedia1" value="1" />
@@ -680,6 +700,133 @@
 
     <path name="deep-buffer-playback headphones">
         <path name="deep-buffer-playback" />
+    </path>
+
+    <path name="primary-playback">
+        <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="primary-playback speaker-protected">
+        <path name="primary-playback" />
+    </path>
+
+    <path name="primary-playback speaker">
+        <ctl name="PRI_TDM_RX_0 Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="primary-playback 4-speaker">
+        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia21" value="1" />
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia22" value="1" />
+    </path>
+
+    <path name="primary-playback speaker-and-headphones">
+        <path name="primary-playback" />
+        <path name="primary-playback speaker" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-headphones">
+        <path name="primary-playback" />
+        <path name="primary-playback 4-speaker" />
+    </path>
+
+    <path name="primary-playback hdmi">
+        <ctl name="HDMI Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="primary-playback speaker-and-hdmi">
+        <path name="primary-playback hdmi" />
+        <path name="primary-playback speaker" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-hdmi">
+        <path name="primary-playback hdmi" />
+        <path name="primary-playback 4-speaker" />
+    </path>
+
+    <path name="primary-playback bt-sco">
+        <ctl name="TERT_AUX_PCM_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="primary-playback bt-sco-wb">
+        <ctl name="AUX PCM SampleRate" value="16000" />
+        <path name="primary-playback bt-sco" />
+    </path>
+
+    <path name="primary-playback speaker-and-bt-sco">
+        <path name="primary-playback bt-sco" />
+        <path name="primary-playback speaker" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-bt-sco">
+        <path name="primary-playback bt-sco" />
+        <path name="primary-playback 4-speaker" />
+    </path>
+
+    <path name="primary-playback speaker-and-bt-sco-wb">
+        <path name="primary-playback bt-sco-wb" />
+        <path name="primary-playback speaker" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-bt-sco-wb">
+        <path name="primary-playback bt-sco-wb" />
+        <path name="primary-playback 4-speaker" />
+    </path>
+
+    <path name="primary-playback speaker-and-headphones-bt-sco">
+        <path name="primary-playback bt-sco" />
+        <path name="primary-playback speaker-and-headphones" />
+    </path>
+
+    <path name="primary-playback speaker-and-headphones-bt-sco-wb">
+        <path name="primary-playback bt-sco-wb" />
+        <path name="primary-playback speaker-and-headphones" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-headphones-bt-sco">
+        <path name="primary-playback bt-sco" />
+        <path name="primary-playback 4-speaker-and-headphones" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-headphones-bt-sco-wb">
+        <path name="primary-playback bt-sco-wb" />
+        <path name="primary-playback 4-speaker-and-headphones" />
+    </path>
+
+    <path name="primary-playback bt-ble">
+        <ctl name="AUX PCM SampleRate" value="16000" />
+        <ctl name="TERT_AUX_PCM_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="primary-playback speaker-and-bt-ble">
+        <path name="primary-playback bt-ble" />
+        <path name="primary-playback speaker" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-bt-ble">
+        <path name="primary-playback bt-ble" />
+        <path name="primary-playback 4-speaker" />
+    </path>
+
+    <path name="primary-playback afe-proxy">
+        <ctl name="AFE_PCM_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="primary-playback usb-headphones">
+        <path name="primary-playback afe-proxy" />
+    </path>
+
+    <path name="primary-playback speaker-and-usb-headphones">
+        <path name="primary-playback usb-headphones" />
+        <path name="primary-playback speaker" />
+    </path>
+
+    <path name="primary-playback 4-speaker-and-usb-headphones">
+        <path name="primary-playback usb-headphones" />
+        <path name="primary-playback 4-speaker" />
+    </path>
+
+    <path name="primary-playback headphones">
+        <path name="primary-playback" />
     </path>
 
     <path name="low-latency-playback">
@@ -740,6 +887,26 @@
     <path name="low-latency-playback 4-speaker-and-bt-sco-wb">
         <path name="low-latency-playback bt-sco-wb" />
         <path name="low-latency-playback 4-speaker" />
+    </path>
+
+    <path name="low-latency-playback speaker-and-headphones-bt-sco">
+        <path name="low-latency-playback bt-sco" />
+        <path name="low-latency-playback speaker-and-headphones" />
+    </path>
+
+    <path name="low-latency-playback speaker-and-headphones-bt-sco-wb">
+        <path name="low-latency-playback bt-sco-wb" />
+        <path name="low-latency-playback speaker-and-headphones" />
+    </path>
+
+    <path name="low-latency-playback 4-speaker-and-headphones-bt-sco">
+        <path name="low-latency-playback bt-sco" />
+        <path name="low-latency-playback 4-speaker-and-headphones" />
+    </path>
+
+    <path name="low-latency-playback 4-speaker-and-headphones-bt-sco-wb">
+        <path name="low-latency-playback bt-sco-wb" />
+        <path name="low-latency-playback 4-speaker-and-headphones" />
     </path>
 
     <path name="low-latency-playback bt-ble">
@@ -831,6 +998,26 @@
     <path name="audio-ull-playback bt-sco-wb">
         <ctl name="AUX PCM SampleRate" value="16000" />
         <path name="audio-ull-playback bt-sco" />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-headphones-bt-sco">
+        <path name="audio-ull-playback bt-sco" />
+        <path name="audio-ull-playback speaker-and-headphones" />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-headphones-bt-sco-wb">
+        <path name="audio-ull-playback bt-sco-wb" />
+        <path name="audio-ull-playback speaker-and-headphones" />
+    </path>
+
+    <path name="audio-ull-playback 4-speaker-and-headphones-bt-sco">
+        <path name="audio-ull-playback bt-sco" />
+        <path name="audio-ull-playback 4-speaker-and-headphones" />
+    </path>
+
+    <path name="audio-ull-playback 4-speaker-and-headphones-bt-sco-wb">
+        <path name="audio-ull-playback bt-sco-wb" />
+        <path name="audio-ull-playback 4-speaker-and-headphones" />
     </path>
 
     <path name="audio-ull-playback bt-ble">
@@ -925,6 +1112,26 @@
     <path name="compress-offload-playback bt-sco-wb">
         <ctl name="AUX PCM SampleRate" value="16000" />
         <path name="compress-offload-playback bt-sco" />
+    </path>
+
+    <path name="compress-offload-playback speaker-and-headphones-bt-sco">
+        <path name="compress-offload-playback bt-sco" />
+        <path name="compress-offload-playback speaker-and-headphones" />
+    </path>
+
+    <path name="compress-offload-playback speaker-and-headphones-bt-sco-wb">
+        <path name="compress-offload-playback bt-sco-wb" />
+        <path name="compress-offload-playback speaker-and-headphones" />
+    </path>
+
+    <path name="compress-offload-playback 4-speaker-and-headphones-bt-sco">
+        <path name="compress-offload-playback bt-sco" />
+        <path name="compress-offload-playback 4-speaker-and-headphones" />
+    </path>
+
+    <path name="compress-offload-playback 4-speaker-and-headphones-bt-sco-wb">
+        <path name="compress-offload-playback bt-sco-wb" />
+        <path name="compress-offload-playback 4-speaker-and-headphones" />
     </path>
 
     <path name="compress-offload-playback speaker-and-hdmi">
@@ -1980,6 +2187,30 @@
 
     <path name="speaker-and-headphones-bt-sco">
         <path name="spk-ear" />
+        <ctl name="HPHL Volume" value="2" />
+        <ctl name="HPHR Volume" value="2" />
+        <ctl name="RX1 Mix Digital Volume" value="76" />
+        <ctl name="RX2 Mix Digital Volume" value="76" />
+    </path>
+
+    <path name="speaker-and-headphones-bt-sco-wb">
+        <path name="spk-ear" />
+        <ctl name="HPHL Volume" value="2" />
+        <ctl name="HPHR Volume" value="2" />
+        <ctl name="RX1 Mix Digital Volume" value="76" />
+        <ctl name="RX2 Mix Digital Volume" value="76" />
+    </path>
+
+   <path name="4-speaker-and-headphones-bt-sco">
+        <path name="4-spk-ear" />
+        <ctl name="HPHL Volume" value="2" />
+        <ctl name="HPHR Volume" value="2" />
+        <ctl name="RX1 Mix Digital Volume" value="76" />
+        <ctl name="RX2 Mix Digital Volume" value="76" />
+    </path>
+
+    <path name="4-speaker-and-headphones-bt-sco-wb">
+        <path name="4-spk-ear" />
         <ctl name="HPHL Volume" value="2" />
         <ctl name="HPHR Volume" value="2" />
         <ctl name="RX1 Mix Digital Volume" value="76" />

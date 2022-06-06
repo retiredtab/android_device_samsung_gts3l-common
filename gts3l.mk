@@ -87,14 +87,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl:32 \
     android.hardware.audio.effect@4.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.0-impl:32 \
     android.hardware.soundtrigger@2.2-impl:32 \
+    audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.msm8996:32 \
     audio.r_submix.default \
     audio.usb.default \
-    liba2dpoffload \
     libaacwrapper \
     libaudio-resampler \
     libaudioroute \
@@ -129,16 +127,15 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0-impl \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.cameraservice.common@2.0.vendor:32 \
-    android.frameworks.cameraservice.device@2.0.vendor:32 \
-    android.frameworks.cameraservice.service@2.1.vendor:32 \
     android.frameworks.displayservice@1.0 \
     android.hardware.camera.provider@2.4-impl:32 \
+    android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0 \
     libshims_cameraclient
 

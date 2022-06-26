@@ -2226,8 +2226,8 @@
         <ctl name="RX INT2_2 MUX" value="RX1" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="HPHL Volume" value="2" />
-        <ctl name="HPHR Volume" value="2" />
+        <ctl name="HPHL Volume" value="6" />
+        <ctl name="HPHR Volume" value="6" />
         <ctl name="SLIM_0_RX Format" value="S24_LE" />
         <ctl name="SLIM_0_RX Channels" value="Two" />
         <ctl name="SLIM_0_RX SampleRate" value="KHZ_48" />
@@ -2242,8 +2242,8 @@
         <ctl name="RX INT2_2 MUX" value="RX1" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="HPHL Volume" value="2" />
-        <ctl name="HPHR Volume" value="2" />
+        <ctl name="HPHL Volume" value="6" />
+        <ctl name="HPHR Volume" value="6" />
         <ctl name="SLIM_0_RX Format" value="S24_LE" />
         <ctl name="SLIM_0_RX Channels" value="Two" />
         <ctl name="SLIM_0_RX SampleRate" value="KHZ_44P1" />
@@ -2253,24 +2253,24 @@
 
     <path name="speaker-and-headphones">
         <path name="spk-ear" />
-        <ctl name="HPHL Volume" value="2" />
-        <ctl name="HPHR Volume" value="2" />
+        <ctl name="HPHL Volume" value="6" />
+        <ctl name="HPHR Volume" value="6" />
         <ctl name="RX1 Mix Digital Volume" value="76" />
         <ctl name="RX2 Mix Digital Volume" value="76" />
     </path>
 
     <path name="4-speaker-and-headphones">
         <path name="4-spk-ear" />
-        <ctl name="HPHL Volume" value="2" />
-        <ctl name="HPHR Volume" value="2" />
+        <ctl name="HPHL Volume" value="6" />
+        <ctl name="HPHR Volume" value="6" />
         <ctl name="RX1 Mix Digital Volume" value="76" />
         <ctl name="RX2 Mix Digital Volume" value="76" />
     </path>
 
     <path name="speaker-and-headphones-bt-sco">
         <path name="spk-ear" />
-        <ctl name="HPHL Volume" value="2" />
-        <ctl name="HPHR Volume" value="2" />
+        <ctl name="HPHL Volume" value="6" />
+        <ctl name="HPHR Volume" value="6" />
         <ctl name="RX1 Mix Digital Volume" value="76" />
         <ctl name="RX2 Mix Digital Volume" value="76" />
     </path>

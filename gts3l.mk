@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl.gts3l:32 \
     android.hardware.audio.effect@2.0-impl:32 \
     android.hardware.audio.effect@6.0-impl:32 \
-    android.hardware.audio.service \
+    android.hardware.audio.service.gts3l \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.primary.msm8996 \

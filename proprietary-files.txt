@@ -540,7 +540,6 @@ lib64/vendor.qti.gnss@2.0.so
 lib64/vendor.qti.gnss@2.1.so
 lib64/vendor.samsung.hardware.gnss@1.0.so
 vendor/bin/hw/vendor.qti.gnss@1.0-service
-vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc
@@ -552,7 +551,6 @@ vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtra_root_cert.pem
-vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 vendor/lib/libDRPlugin.so
@@ -583,7 +581,6 @@ vendor/lib/libpdmapper.so
 vendor/lib/libulp2.so
 vendor/lib/libxtadapter.so
 vendor/lib/libxtwifi_ulp_adaptor.so
-vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 vendor/lib64/libDRPlugin.so

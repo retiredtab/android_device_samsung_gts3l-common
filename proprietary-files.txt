@@ -540,6 +540,7 @@ lib64/vendor.qti.gnss@2.0.so
 lib64/vendor.qti.gnss@2.1.so
 lib64/vendor.samsung.hardware.gnss@1.0.so
 vendor/bin/hw/vendor.qti.gnss@1.0-service
+vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc

@@ -190,6 +190,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \

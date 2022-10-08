@@ -737,11 +737,6 @@ service vendor.qdmastatsd /system/vendor/bin/qdmastatsd
     user system
     group readproc system net_bw_stats radio vendor_rfs_shared
 
-service loc_launcher /system/vendor/bin/loc_launcher
-    class late_start
-    user gps
-    group gps
-
 service drmdiag /system/vendor/bin/drmdiagapp
     class late_start
      user root

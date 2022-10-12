@@ -543,6 +543,7 @@ vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
+vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc
 vendor/etc/apdr.conf
 vendor/etc/cacert_location.pem
@@ -582,6 +583,7 @@ vendor/lib/libpdmapper.so
 vendor/lib/libulp2.so
 vendor/lib/libxtadapter.so
 vendor/lib/libxtwifi_ulp_adaptor.so
+vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 vendor/lib64/libDRPlugin.so

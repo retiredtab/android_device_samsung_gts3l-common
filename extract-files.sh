@@ -72,6 +72,21 @@ function blob_fixup() {
     vendor/lib/libmmcamera2_sensor_modules.so)
         sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
         ;;
+    vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
+    vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
+    vendor/bin/loc_launcher)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
+    vendor/bin/lowi-server)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
+    vendor/bin/xtra-daemon)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
     lib64/libpixelflinger.so)
         "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
         ;;

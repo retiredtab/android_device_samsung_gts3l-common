@@ -87,7 +87,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl:32 \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.service.gts3l \
-    android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.primary.msm8996 \
     audio.r_submix.default \
@@ -121,7 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl
+    android.hardware.bluetooth.audio-impl
 
 # Camera
 PRODUCT_PACKAGES += \

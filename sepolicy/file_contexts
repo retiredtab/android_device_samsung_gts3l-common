@@ -207,3 +207,7 @@
 /sys/devices/virtual/sec/sec_keypad(/.*)?                       u:object_r:sysfs_sec_keypad:s0
 /sys/devices/virtual/sec/switch(/.*)?                           u:object_r:sysfs_sec_switch:s0
 /sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0
+
+# USB
+/sys/devices/virtual/host_notify/usb_otg(/.*)?    u:object_r:sysfs_usb_otg:s0
+/sys/devices/virtual/usb_notify/usb_control(/.*)? u:object_r:sysfs_usb_otg:s0

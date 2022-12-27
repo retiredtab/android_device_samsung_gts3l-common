@@ -186,6 +186,10 @@ TARGET_LD_SHIM_LIBS := \
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
 
+# Verity
+# Only needed for signing
+BOARD_AVB_ENABLE := false
+
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
 BOARD_WLAN_DEVICE := qcwcn

@@ -72,6 +72,9 @@ function blob_fixup() {
     vendor/lib/libmmcamera2_sensor_modules.so)
         sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
         ;;
+    vendor/lib/hw/audio.primary.msm8996.so)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
     vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so)
         "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
         ;;

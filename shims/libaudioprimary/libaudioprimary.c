@@ -17,7 +17,7 @@
 #define LOG_TAG "libaudioprimary_shim"
 #define LOG_NDEBUG 0
 
-#include <cutils/log.h>
+#include <log/log.h>
 
 void direct_mixer_set_value(int arg0, int arg1)
 {

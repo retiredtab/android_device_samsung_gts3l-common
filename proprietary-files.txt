@@ -11,23 +11,25 @@ vendor/lib64/libfastcvadsp_stub.so
 
 # ANT+
 lib/com.qualcomm.qti.ant@1.0.so
+lib/com.qualcomm.qti.ant@1.0.so:vendor/lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
 lib64/com.qualcomm.qti.ant@1.0.so
+lib64/com.qualcomm.qti.ant@1.0.so:vendor/lib64/com.qualcomm.qti.ant@1.0.so
 -lib64/libantradio.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
-lib/libSamsungPostProcess.so
-lib/libSamsungPostProcessConvertor.so
-lib/lib_SamsungRec_06002.so
-lib/lib_SoundBooster_ver_Quad_710.so
-lib/libprofileparamstorage.so
-lib/librecordalive.so
-lib/libsamsungVoipResampler.so
-lib/libsecaudiocoreutils.so
-lib64/libprofileparamstorage.so
-lib64/libsecaudiocoreutils.so
+lib/libSamsungPostProcess.so:vendor/lib/libSamsungPostProcess.so
+lib/libSamsungPostProcessConvertor.so:vendor/lib/libSamsungPostProcessConvertor.so
+lib/lib_SamsungRec_06002.so:vendor/lib/lib_SamsungRec_06002.so
+lib/lib_SoundBooster_ver_Quad_710.so:vendor/lib/lib_SoundBooster_ver_Quad_710.so
+lib/libprofileparamstorage.so:vendor/lib/libprofileparamstorage.so
+lib/librecordalive.so:vendor/lib/librecordalive.so
+lib/libsamsungVoipResampler.so:vendor/lib/libsamsungVoipResampler.so
+lib/libsecaudiocoreutils.so:vendor/lib/libsecaudiocoreutils.so
+lib64/libprofileparamstorage.so:vendor/lib64/libprofileparamstorage.so
+lib64/libsecaudiocoreutils.so:vendor/lib64/libsecaudiocoreutils.so
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/dolby/dax-default.xml
 vendor/lib/hw/audio.primary.msm8996.so
@@ -69,8 +71,8 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libswdap.so
 
 # Bluetooth
-lib/vendor.samsung.hardware.bluetooth@1.0.so
-lib64/vendor.samsung.hardware.bluetooth@1.0.so
+lib/vendor.samsung.hardware.bluetooth@1.0.so:vendor/lib/vendor.samsung.hardware.bluetooth@1.0.so
+lib64/vendor.samsung.hardware.bluetooth@1.0.so:vendor/lib64/vendor.samsung.hardware.bluetooth@1.0.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/btnvtool
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -80,12 +82,12 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
 # Bluetooth (firmware)
-etc/firmware/btfw32.tlv:vendor/firmware/btfw32.tlv
-etc/firmware/btnv32.bin:vendor/firmware/btnv32.bin
+etc/firmware/btfw32.tlv:vendor/bt_firmware/image/btfw32.tlv
+etc/firmware/btnv32.bin:vendor/bt_firmware/image/btnv32.bin
 
 # Camera
-lib/libuniapi.so
-lib/libuniplugin.so
+lib/libuniapi.so:vendor/lib/libuniapi.so
+lib/libuniplugin.so:vendor/lib/libuniplugin.so
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8996.so
 vendor/lib/libedge_smooth_hvx_stub.so
@@ -465,8 +467,8 @@ vendor/lib64/vendor.display.color@1.2.so|53b7d9d754f8909700d4b79c3145a209f638c7f
 vendor/lib64/vendor.display.postproc@1.0.so|2c389d80a5c5cc87608babf29a056a74d69697e4
 
 # Display utils
-lib/vendor.qti.hardware.qdutils_disp@1.0.so
-lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+lib/vendor.qti.hardware.qdutils_disp@1.0.so:vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+lib64/vendor.qti.hardware.qdutils_disp@1.0.so:vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 
@@ -527,8 +529,8 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
 # FM
-lib/vendor.qti.hardware.fm@1.0.so
-lib64/vendor.qti.hardware.fm@1.0.so
+lib/vendor.qti.hardware.fm@1.0.so:vendor/lib/vendor.qti.hardware.fm@1.0.so
+lib64/vendor.qti.hardware.fm@1.0.so:vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/ftm_fm_lib.so
 vendor/lib64/ftm_fm_lib.so
 
@@ -536,22 +538,22 @@ vendor/lib64/ftm_fm_lib.so
 vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # GPS
-lib/libfloatingfeature.so
-lib/libxt_native.so
-lib/vendor.qti.gnss@1.0.so
-lib/vendor.qti.gnss@1.1.so
-lib/vendor.qti.gnss@1.2.so
-lib/vendor.qti.gnss@2.0.so
-lib/vendor.qti.gnss@2.1.so
-lib/vendor.samsung.hardware.gnss@1.0.so
-lib64/libfloatingfeature.so
-lib64/libxt_native.so
-lib64/vendor.qti.gnss@1.0.so
-lib64/vendor.qti.gnss@1.1.so
-lib64/vendor.qti.gnss@1.2.so
-lib64/vendor.qti.gnss@2.0.so
-lib64/vendor.qti.gnss@2.1.so
-lib64/vendor.samsung.hardware.gnss@1.0.so
+lib/libfloatingfeature.so:vendor/lib/libfloatingfeature.so
+lib/libxt_native.so:vendor/lib/libxt_native.so
+lib/vendor.qti.gnss@1.0.so:vendor/lib/vendor.qti.gnss@1.0.so
+lib/vendor.qti.gnss@1.1.so:vendor/lib/vendor.qti.gnss@1.1.so
+lib/vendor.qti.gnss@1.2.so:vendor/lib/vendor.qti.gnss@1.2.so
+lib/vendor.qti.gnss@2.0.so:vendor/lib/vendor.qti.gnss@2.0.so
+lib/vendor.qti.gnss@2.1.so:vendor/lib/vendor.qti.gnss@2.1.so
+lib/vendor.samsung.hardware.gnss@1.0.so:vendor/lib/vendor.samsung.hardware.gnss@1.0.so
+lib64/libfloatingfeature.so:vendor/lib64/libfloatingfeature.so
+lib64/libxt_native.so:vendor/lib64/libxt_native.so
+lib64/vendor.qti.gnss@1.0.so:vendor/lib64/vendor.qti.gnss@1.0.so
+lib64/vendor.qti.gnss@1.1.so:vendor/lib64/vendor.qti.gnss@1.1.so
+lib64/vendor.qti.gnss@1.2.so:vendor/lib64/vendor.qti.gnss@1.2.so
+lib64/vendor.qti.gnss@2.0.so:vendor/lib64/vendor.qti.gnss@2.0.so
+lib64/vendor.qti.gnss@2.1.so:vendor/lib64/vendor.qti.gnss@2.1.so
+lib64/vendor.samsung.hardware.gnss@1.0.so:vendor/lib64/vendor.samsung.hardware.gnss@1.0.so
 vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -715,10 +717,10 @@ saiv/face/fr/SAIT_FR11.bin
 saiv/face/fr/SAIT_FR22.bin
 
 # I/O Prefetcher
-lib/vendor.qti.hardware.iop@1.0.so
-lib/vendor.qti.hardware.iop@2.0.so
-lib64/vendor.qti.hardware.iop@1.0.so
-lib64/vendor.qti.hardware.iop@2.0.so
+lib/vendor.qti.hardware.iop@1.0.so:vendor/lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.iop@2.0.so:vendor/lib/vendor.qti.hardware.iop@2.0.so
+lib64/vendor.qti.hardware.iop@1.0.so:vendor/lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so:vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/libqti-iopd-client.so
 vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
@@ -734,13 +736,13 @@ vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libkeymaster_mdfpp.so
 
 # Media - from daisy - QKQ1.191002.002
-lib/libFileMux.so|1c713da8d18f03deb33c3211761fc07dd57d6946
-lib/libOmxMux.so|6f1a1f5fc8f9a8683e6fb719b6fe51a68c6b0e84
-lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
-lib/libmmparser_lite.so|c3656bbcd33d44d5b22743061261989fffd0382f
-lib64/libFileMux.so|8d07dde58a8b629ccce4dd9c778e76a6513ca555
-lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
-lib64/libmmparser_lite.so|bea6788f2f0924c74a3bb7c1fdd24bc59202550c
+lib/libFileMux.so:vendor/lib/libFileMux.so|1c713da8d18f03deb33c3211761fc07dd57d6946
+lib/libOmxMux.so:vendor/lib/libOmxMux.so|6f1a1f5fc8f9a8683e6fb719b6fe51a68c6b0e84
+lib/libmmosal.so:vendor/lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
+lib/libmmparser_lite.so:vendor/lib/libmmparser_lite.so|c3656bbcd33d44d5b22743061261989fffd0382f
+lib64/libFileMux.so:vendor/lib64/libFileMux.so|8d07dde58a8b629ccce4dd9c778e76a6513ca555
+lib64/libmmosal.so:vendor/lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
+lib64/libmmparser_lite.so:vendor/lib64/libmmparser_lite.so|bea6788f2f0924c74a3bb7c1fdd24bc59202550c
 vendor/lib/libOmxAacDec.so|55772a6d0cf3e6a5a2c32348fd7096b8737d490b
 vendor/lib/libOmxAlacDec.so|adca064b15a7d545075af6f5222db45dec8202b5
 vendor/lib/libOmxAlacDecSw.so|8700268f92a953549e5936af9d5ccd08f99ed50f
@@ -768,8 +770,8 @@ vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Power
-lib/vendor.samsung.hardware.miscpower@1.0.so
-lib64/vendor.samsung.hardware.miscpower@1.0.so
+lib/vendor.samsung.hardware.miscpower@1.0.so:vendor/lib/vendor.samsung.hardware.miscpower@1.0.so
+lib64/vendor.samsung.hardware.miscpower@1.0.so:vendor/lib64/vendor.samsung.hardware.miscpower@1.0.so
 vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service
 vendor/etc/init/vendor.samsung.hardware.miscpower@1.0-service.rc
 
@@ -786,10 +788,10 @@ vendor/lib64/libqti-util.so|0c34c7cbb07197841e9f097925fe961f3226e621
 
 # Power-off charging
 bin/lpm
-lib64/libmaet.so
-lib64/libpixelflinger.so
-lib64/libsxqk.so
-lib64/libsxqk_skia.so
+lib64/libmaet.so:vendor/lib64/libmaet.so
+lib64/libpixelflinger.so:vendor/lib64/libpixelflinger.so
+lib64/libsxqk.so:vendor/lib64/libsxqk.so
+lib64/libsxqk_skia.so:vendor/lib64/libsxqk_skia.so
 media/battery_error.spi
 media/battery_low.spi
 media/battery_temperature_error.spi
@@ -807,8 +809,8 @@ media/temperature_limit_usb.spi
 media/water_protection_usb.spi
 
 # QMI
-lib/libdiag_system.so
-lib64/libdiag_system.so
+lib/libdiag_system.so:vendor/lib/libdiag_system.so
+lib64/libdiag_system.so:vendor/lib64/libdiag_system.so
 vendor/bin/irsc_util
 vendor/bin/qmuxd
 vendor/bin/rmt_storage
@@ -858,11 +860,11 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
 # SEC
-lib/libsecnativefeature.so
-lib64/libsecnativefeature.so
+lib/libsecnativefeature.so:vendor/lib/libsecnativefeature.so
+lib64/libsecnativefeature.so:vendor/lib64/libsecnativefeature.so
 
 # Sensors
-lib/libsensorlistener.so
+lib/libsensorlistener.so:vendor/lib/libsensorlistener.so
 vendor/bin/factory.adsp
 vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.msm8996.so
@@ -922,8 +924,8 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
 # Trusted User Interface
-lib/vendor.qti.hardware.tui_comm@1.0.so
-lib64/vendor.qti.hardware.tui_comm@1.0.so
+lib/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+lib64/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 
@@ -933,11 +935,11 @@ vendor/bin/hw/macloader
 vendor/bin/wcnss_filter
 
 # WiFi (display)
-lib/libremotedisplay_wfd.so
-lib/libwfdavenhancements.so
-lib/libwfdmmsink.so
-lib/libwfduibcsink.so
-lib/libwfduibcsinkinterface.so
+lib/libremotedisplay_wfd.so:vendor/lib/libremotedisplay_wfd.so
+lib/libwfdavenhancements.so:vendor/lib/libwfdavenhancements.so
+lib/libwfdmmsink.so:vendor/lib/libwfdmmsink.so
+lib/libwfduibcsink.so:vendor/lib/libwfduibcsink.so
+lib/libwfduibcsinkinterface.so:vendor/lib/libwfduibcsinkinterface.so
 
 # WLAN (firmware)
 etc/firmware/Data.msc:vendor/firmware/Data.msc

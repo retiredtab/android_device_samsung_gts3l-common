@@ -72,6 +72,10 @@ function blob_fixup() {
     vendor/lib/libmmcamera2_sensor_modules.so)
         sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
         ;;
+    vendor/lib/libmmcamera2_stats_modules.so)
+        "${PATCHELF}" --replace-needed "libandroid.so" "libsensorndkbridge.so" "${2}"
+        "${PATCHELF}" --replace-needed "libgui.so" "libgui_vendor.so" "${2}"
+        ;;
     vendor/lib/hw/audio.primary.msm8996.so)
         "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
         ;;
@@ -88,10 +92,42 @@ function blob_fixup() {
         "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
         ;;
     vendor/bin/xtra-daemon)
+        "${PATCHELF}" --replace-needed "libandroid.so" "libsensorndkbridge.so" "${2}"
         "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
+    lib64/com.qualcomm.qti.ant@1.0.so|vendor/lib64/com.qualcomm.qti.ant@1.0.so)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
+    vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
+    vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
+    vendor/bin/hw/vendor.qti.gnss@1.0-service)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
+    vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
+    vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
+    vendor/bin/hw/vendor.samsung.hardware.miscpower@1.0-service)
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
         ;;
     lib64/libpixelflinger.so)
         "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
+        ;;
+    vendor/lib/libsensorlistener.so|vendor/lib/libxt_native.so|vendor/lib64/libxt_native.so|vendor/lib64/libhypermotion_interface.so)
+        "${PATCHELF}" --replace-needed "libandroid.so" "libsensorndkbridge.so" "${2}"
+        ;;
+    vendor/lib64/libmaet.so|vendor/lib64/libsxqk_skia.so)
+        "${PATCHELF}" --replace-needed "libandroid.so" "libsensorndkbridge.so" "${2}"
+        "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+        ;;
+    vendor/lib/W13QS_libTsAe.so|vendor/lib/lib_SamsungRec_06002.so|vendor/lib/libdejagging_core.so|vendor/lib/libTsAe.so|vendor/lib/libTsAccmFront.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/W13QS_libTsAwb.so|vendor/lib/libTsAeFront.so|vendor/lib/libTsAf.so|vendor/lib/libTsAwb.so|vendor/lib/W13QS_libTsAccm.so|vendor/lib/W13QS_libTsAf.so|vendor/lib/libblurdetection.so|vendor/lib/libmmcamera_faceproc.so|vendor/lib/libimage_flashed_lls.so|vendor/lib/libTsAwbFront.so|vendor/lib/libTsAccm.so|vendor/lib/lib_SoundBooster_ver_Quad_710.so|vendor/lib/libsmartfocusengine.so|vendor/lib64/libdejagging_core.so|vendor/lib64/libblurdetection.so|vendor/lib64/libimage_flashed_lls.so|vendor/lib64/libsmartfocusengine.so)
+        "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
         ;;
     vendor/bin/pm-service)
         grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"

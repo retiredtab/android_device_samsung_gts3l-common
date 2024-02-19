@@ -187,7 +187,7 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib/libbauthserver.so|libbauthtzcommon_shim.so \
     /vendor/lib64/libbauthserver.so|libbauthtzcommon_shim.so \
     /vendor/lib/hw/audio.primary.msm8996.so|libaudioprimary_shim.so \
-    /vendor/lib/hw/camera.msm8996.so|libshims_cameraclient.so
+    /vendor/lib/hw/camera.msm8996.so|libcamera_metadata_helper.so
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true

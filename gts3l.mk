@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0 \
     libgui_vendor \
-    libshims_cameraclient
+    libcamera_metadata_helper
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/msm8996_camera_gts3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/msm8996_camera_gts3.xml \

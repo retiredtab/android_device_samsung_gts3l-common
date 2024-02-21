@@ -145,7 +145,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware-modem:/firmware-modem \
     /vendor/firmware_mnt:/firmware \
-    /vendor/bt_firmware:/bt_firmware \
     /mnt/vendor/persist:/persist
 
 # Root
@@ -160,7 +159,6 @@ TARGET_PROVIDES_KEYMASTER := true
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(COMMON_PATH)/power_ext/power_interactive_ext.c
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop

@@ -28,12 +28,6 @@ value:5386
 [AID_VENDOR_AUDIT]
 value:5555
 
-[bt_firmware/]
-mode: 0771
-user: AID_SYSTEM
-group: AID_SYSTEM
-caps: 0
-
 [dsp/]
 mode: 0771
 user: AID_MEDIA

@@ -82,8 +82,8 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
 # Bluetooth (firmware)
-etc/firmware/btfw32.tlv:vendor/bt_firmware/image/btfw32.tlv
-etc/firmware/btnv32.bin:vendor/bt_firmware/image/btnv32.bin
+etc/firmware/btfw32.tlv:vendor/firmware/btfw32.tlv
+etc/firmware/btnv32.bin:vendor/firmware/btnv32.bin
 
 # Camera
 lib/libuniapi.so:vendor/lib/libuniapi.so

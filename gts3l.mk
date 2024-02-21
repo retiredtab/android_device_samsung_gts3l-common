@@ -128,9 +128,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl:64 \
-    android.hardware.bluetooth@1.0-service \
-    libbt-vendor
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.audio-impl
 
 # Camera
 PRODUCT_PACKAGES += \

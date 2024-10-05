@@ -25,7 +25,7 @@ COMMON_PATH := device/samsung/gts3l-common
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # APEX
-OVERRIDE_TARGET_FLATTEN_APEX := true
+# OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Architecture
 TARGET_ARCH := arm64

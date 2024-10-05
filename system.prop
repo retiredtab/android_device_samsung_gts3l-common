@@ -92,6 +92,7 @@ dalvik.vm.heapmaxfree=8m
 debug.gralloc.enable_fb_ubwc=1
 debug.sf.enable_hwc_vds=1
 ro.qcom.hdr.config=/system/vendor/etc/hdr_tm_config.xml
+ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 
 # Graphics
 debug.egl.hw=1

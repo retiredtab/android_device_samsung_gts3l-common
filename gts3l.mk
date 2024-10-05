@@ -173,6 +173,20 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/display/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml \
     $(LOCAL_PATH)/display/qdcm_calib_data_ss_dsi_panel_ANA38401_AMS968HH01_QXGA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_ANA38401_AMS968HH01_QXGA.xml
 
+# dlopen errors needed in vendor
+# libsqlite.so, libion.so, libexpat.so, libandroidicu.so
+# vndksupport: Could not load /vendor/lib/hw/audio.primary.msm8996.so from default namespace:
+# dlopen failed: library "libaudioroute.so" not found: needed by
+# /system/vendor/lib/hw/audio.primary.msm8996.so in namespace (default).
+PRODUCT_PACKAGES += \
+    libaudioroute.vendor \
+    libexpat.vendor \
+    libion.vendor \
+    libpower.vendor \
+    libprocessgroup.vendor \
+    libsqlite.vendor \
+    dlopen
+
 # Doze mode
 PRODUCT_PACKAGES += \
     SamsungDoze

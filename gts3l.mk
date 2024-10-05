@@ -151,6 +151,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \

@@ -44,6 +44,7 @@
             <instance>legacy/0</instance>
         </interface>
     </hal>
+<!-- disable
     <hal format="hidl">
         <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
@@ -53,6 +54,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>android.hardware.drm</name>
         <transport>hwbinder</transport>

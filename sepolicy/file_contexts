@@ -182,6 +182,11 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.gts3l                          u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@1\.0-service                   u:object_r:hal_power_default_exec:s0
 
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light(@[0-9].[0-9])?-service\.samsung            u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb(@[0-9]\.[0-9])?-service\.samsung             u:object_r:hal_usb_default_exec:s0
+/(vendor|system/vendor)/bin/factory.adsp														   u:object_r:factory_adsp_exec:s0
+/(vendor|system/vendor)/bin/wifiloader                                                             u:object_r:wifiloader_exec:s0
+
 # Rootfs
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /firmware_mnt(/.*)?      u:object_r:firmware_file:s0

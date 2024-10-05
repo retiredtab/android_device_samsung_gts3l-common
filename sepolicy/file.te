@@ -42,6 +42,8 @@ type proc_simslot_count, fs_type, proc_type;
 type proc_swappiness, fs_type, proc_type;
 type proc_last_kmsg, fs_type, proc_type;
 type proc_reset_reason, fs_type, proc_type;
+type proc_factory_adsp, fs_type, proc_type;
+type proc_wifiloader, fs_type, proc_type;
 
 # rootfs
 type firmware-modem_file, file_type, contextmount_type, vendor_file_type;

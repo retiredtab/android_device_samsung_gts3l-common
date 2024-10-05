@@ -1,2 +1,6 @@
+#============= hal_wifi_default ==============
+
 allow hal_wifi_default vendor_convergence_data_file:file { open read write };
 allow hal_wifi_default proc_net:file write;
+
+allow hal_wifi_default efs_file:dir search;

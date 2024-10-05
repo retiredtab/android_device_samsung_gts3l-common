@@ -223,6 +223,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.1 \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor
 

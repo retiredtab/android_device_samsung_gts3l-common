@@ -112,8 +112,8 @@ vendor.display.disable_skip_validate=1
 ro.hardware.keystore=mdfpp
 
 # Media
-debug.stagefright.omx_default_rank=0
-debug.stagefright.omx_default_rank.sw-audio=1
+# debug.stagefright.omx_default_rank=0
+# debug.stagefright.omx_default_rank.sw-audio=1
 vendor.vidc.enc.disable.pq=true
 vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2

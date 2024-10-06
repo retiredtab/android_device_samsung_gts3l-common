@@ -1,3 +1,4 @@
+#============= mm-qcamerad ==============
 allow mm-qcamerad camera_data_file:sock_file { create unlink };
 allow mm-qcamerad camera_data_file:dir search;
 
@@ -11,3 +12,7 @@ allow mm-qcamerad sysfs:file { open read };
 
 allow mm-qcamerad sec_camera_prop:file { read open getattr };
 allow mm-qcamerad sec_camera_prop:property_service set;
+
+# === Android 14 QPR3 ===
+allow mm-qcamerad default_prop:file r_file_perms;
+allow mm-qcamerad sysfs_graphics:dir r_dir_perms;

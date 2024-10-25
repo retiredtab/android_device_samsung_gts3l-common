@@ -1,3 +1,6 @@
+#============= cameraserver ==============
+allow cameraserver vendor_file:file r_file_perms;
+
 allow cameraserver csc_prop:file { getattr open read };
 
 allow cameraserver hal_perf_default:binder call;

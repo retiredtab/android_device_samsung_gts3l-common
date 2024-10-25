@@ -1,3 +1,6 @@
+#============= location ==============
+allow location sysfs_socinfo_sensitive:file r_file_perms;
+
 allow location csc_prop:file { getattr open read };
 
 allow location sysfs:file { open read };

@@ -1,3 +1,8 @@
+#============= vendor_init ==============
+allow vendor_init ipa_dev:file create_file_perms;
+allow vendor_init tombstone_data_file:dir setattr;
+allow vendor_init vendor_tee_listener_prop:file r_file_perms;
+
 allow vendor_init cgroup:file rw_file_perms;
 
 allow vendor_init proc_default_smp_affinity:file rw_file_perms;

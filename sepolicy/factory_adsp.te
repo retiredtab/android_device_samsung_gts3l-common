@@ -17,3 +17,13 @@ type factory_adsp_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(factory_adsp)
 
 allow factory_adsp proc_factory_adsp:file r_file_perms;
+
+#============= factory_adsp ==============
+allow factory_adsp diag_device:chr_file rw_file_perms;
+allow factory_adsp mnt_vendor_file:dir search;
+allow factory_adsp node:tcp_socket node_bind;
+allow factory_adsp persist_file:lnk_file r_file_perms;
+allow factory_adsp self:netlink_socket { bind create read };
+allow factory_adsp self:tcp_socket { bind create };
+allow factory_adsp sensors_persist_file:dir r_dir_perms;
+allow factory_adsp sensors_persist_file:file r_file_perms;

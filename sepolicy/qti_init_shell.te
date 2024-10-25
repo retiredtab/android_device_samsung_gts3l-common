@@ -1,3 +1,6 @@
+#============= qti_init_shell ==============
+allow qti_init_shell ctl_stop_prop:property_service set;
+
 allow qti_init_shell mnt_vendor_file:dir create_dir_perms;
 
 allow qti_init_shell sensors_persist_file:dir create_dir_perms;

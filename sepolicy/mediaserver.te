@@ -1,1 +1,4 @@
+#============= mediaserver ==============
+allow mediaserver vendor_file:file r_file_perms;
+
 allow mediaserver exported_camera_prop:file { open read getattr };

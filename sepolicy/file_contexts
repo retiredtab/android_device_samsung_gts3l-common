@@ -172,7 +172,8 @@
 /mnt/vendor/efs/wv\.keys                       u:object_r:sec_efs_file:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service\.gts3l                            u:object_r:hal_audio_default_exec:s0
+# /(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service\.gts3l                            u:object_r:hal_audio_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service\		                           u:object_r:hal_audio_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.samsung         u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.samsung                     u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.gts3l                    u:object_r:hal_keymaster_default_exec:s0

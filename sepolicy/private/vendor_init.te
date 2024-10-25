@@ -1,0 +1,2 @@
+#============= vendor_init ==============
+allow vendor_init vendor_seemp_data_file:dir getattr;

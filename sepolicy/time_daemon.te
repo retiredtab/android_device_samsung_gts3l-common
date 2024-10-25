@@ -1,3 +1,6 @@
+#============= time_daemon ==============
+allow time_daemon self:capability dac_override;
+
 r_dir_file(time_daemon, timeservice_app)
 
 allow time_daemon sysfs:file { open read };
